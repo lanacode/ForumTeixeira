@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+
+body, .body_2 {
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+}
+
+.containerImagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .imagemDescricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+      font-size: 80px;
+      font-weight: bold;
+      margin-top: 20px;
+      font-family: "League Gothic", sans-serif;
+    }
+
+    & img {
+      width: 400px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 30px;
+  background: #004aad;
+  border-radius: 10px;
+  overflow: hidden;
+  perspective: 500px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+
+  & .imagemSubtitulo {
+    font-size: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+
+  & .input {
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffc700;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    & .input::placeholder {
+      color: white;
+    }
+  }
+
+  & .input:hover,
+  .input:focus {
+    border-color: #bd9402;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    outline: none;
+  }
+
+  & button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #004aad;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: 0.3s;
+
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  & button:hover {
+    background-color: #ffc700;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  font-size: 20px;
+
+  & img {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    width: 50px;
+
+  }
+}
+
+.containerIndex2 {
+  transform: translateX(-60%);
+  transform: translateY(60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  & h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "League Gothic", sans-serif;
+  }
+
+  & img {
+    width: 500px;
+  }
+
+  & .footerIndex2 {
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .containerImagem {
+
+    & .imagemDescricao {
+
+      & h1 {
+        font-size: 60px;
+      }
+
+      & img {
+        width: 300px;
+      }
+    }
+  }
+
+  .form {
+    padding: 30px 20px;
+
+    & .input {
+      font-size: 14px;
+    }
+
+    & button {
+      font-size: 14px;
+    }
+
+    & button:hover {
+      font-size: 15px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  body {
+    margin-top: 10rem;
+  }
+
+  .containerImagem {
+
+    & .imagemDescricao {
+
+      & h1 {
+        font-size: 100px;
+      }
+
+      & img {
+        width: 500px;
+      }
+    }
+  }
+
+  .form {
+    padding: 40px 30px;
+
+    & h2 {
+      font-size: 20px;
+    }
+
+    & .input {
+      font-size: 18px;
+    }
+
+    & button {
+      font-size: 20px;
+    }
+
+    & button:hover {
+      font-size: 21px;
+    }
+  }
+
+  footer {
+    & img {
+      width: 50px;
+    }
+
+    & p {
+      font-size: 15px;
+    }
+  }
+
+  .containerIndex2 {
+    & h1 {
+      font-size: 100px;
+    }
+  
+    & img {
+      width: 500px;
+    }
+  
+    & .footerIndex2 {
+      font-size: 15px;
+    }
+  
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    margin-top: 20px;
+  }
+
+  .containerImagem {
+
+    & .imagemDescricao {
+
+      & h1 {
+        font-size: 50px;
+        margin-top: 20px;
+      }
+
+      & img {
+        width: 300px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .form {
+    & h2 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    & .input {
+      font-size: 18px;
+    }
+
+    & button {
+      font-size: 20px;
+    }
+
+    & button:hover {
+      font-size: 21px;
+    }
+  }
+
+  footer {
+    & img {
+      width: 50px;
+    }
+
+    & p {
+      font-size: 15px;
+    }
+  }
+
+  .containerIndex2 {
+    & h1 {
+      font-size: 50px;
+    }
+  
+    & img {
+      width: 300px;
+    }
+  
+    & .footerIndex2 {
+      font-size: 15px;
+    }
+  
+  }
+}
